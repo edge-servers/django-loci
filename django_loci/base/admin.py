@@ -13,7 +13,7 @@ from django.utils.functional import cached_property
 from django.utils.translation import gettext_lazy as _
 from leaflet.admin import LeafletGeoAdmin
 
-from openwisp_utils.admin import TimeReadonlyAdminMixin
+from immunity_utils.admin import TimeReadonlyAdminMixin
 
 from ..base.geocoding_views import geocode_view, reverse_geocode_view
 from ..fields import GeometryField

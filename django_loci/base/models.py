@@ -7,7 +7,7 @@ from django.contrib.humanize.templatetags.humanize import ordinal
 from django.core.exceptions import ValidationError
 from django.utils.translation import gettext_lazy as _
 
-from openwisp_utils.base import TimeStampedEditableModel
+from immunity_utils.base import TimeStampedEditableModel
 
 from .. import settings as app_settings
 

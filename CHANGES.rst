@@ -22,16 +22,16 @@ Changes
 ~~~~~~~
 
 - Converted geocoding test to check
-  `#90 <https://github.com/openwisp/django-loci/issues/90>`_
+  `#90 <https://github.com/edge-servers/django-loci/issues/90>`_
 - Use ``ReconnectingWebsocket`` to websocket connection
-  `#101 <https://github.com/openwisp/django-loci/issues/101>`_
+  `#101 <https://github.com/edge-servers/django-loci/issues/101>`_
 - Dropped support for Python ``3.6``
 - Added support for Python ``3.8`` and ``3.9``
 - Added support for Django ``3.2.x`` and ``4.0.x``
 - Migrated to ``channels~=3.0.4``
 - Bumped ``Pillow~=9.0.0``
 - Bumped ``geopy~=2.2.0``
-- Bumped ``openwisp-utils~=1.0.0``
+- Bumped ``immunity-utils~=1.0.0``
 - Set lowest django version supported to ``django~=3.0.0``
 
 Version 0.4.3 [2021-06-29]
@@ -41,13 +41,13 @@ Version 0.4.3 [2021-06-29]
   version which was patched for security vulnerabilities
 - Several other dependencies and test dependencies were updated
   (django-leaflet, geopy, pytest-django, pytest-asyncio, pytest-cov,
-  responses, openwisp-utils)
+  responses, immunity-utils)
 
 Version 0.4.2 [2021-03-16]
 --------------------------
 
 - Fixed broken UI in inline geo selection flow caused by a JS change in django
-  (`issue #85 <https://github.com/openwisp/django-loci/issues/85>`_)
+  (`issue #85 <https://github.com/edge-servers/django-loci/issues/85>`_)
 
 Version 0.4.1 [2021-02-24]
 --------------------------
@@ -72,7 +72,7 @@ Changes
 ~~~~~~~
 
 - [deps] Increased Pillow range to allow new 8.0.0 version
-- [deps] Updated openwisp-utils version range to support 0.6 and 0.7
+- [deps] Updated immunity-utils version range to support 0.6 and 0.7
 
 Bugfixes
 ~~~~~~~~
@@ -84,13 +84,13 @@ Version 0.3.4 [2020-08-16]
 --------------------------
 
 - [deps] Added support for django 3.1
-- [deps] Updated to openwisp-utils 0.6
+- [deps] Updated to immunity-utils 0.6
 
 Version 0.3.3 [2020-07-25]
 --------------------------
 
 - [fix] Fixed websocket connect error for location change view
-- [deps] Added support for Pillow~=7.2.0 & openwisp-utils~=0.5.1 and dropped their lower versions
+- [deps] Added support for Pillow~=7.2.0 & immunity-utils~=0.5.1 and dropped their lower versions
 - [deps] Added support for django-leaflet version 0.28
 
 Version 0.3.2 [2020-07-01]

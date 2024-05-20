@@ -10,7 +10,7 @@ ALLOWED_HOSTS = []
 
 DATABASES = {
     'default': {
-        'ENGINE': 'openwisp_utils.db.backends.spatialite',
+        'ENGINE': 'immunity_utils.db.backends.spatialite',
         'NAME': 'django-loci.db',
     }
 }
@@ -26,7 +26,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.gis',
-    'openwisp_utils.admin_theme',
+    'immunity_utils.admin_theme',
     # django-loci
     'django_loci',
     # admin
@@ -54,7 +54,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'openwisp2.urls'
+ROOT_URLCONF = 'immunity2.urls'
 
 ASGI_APPLICATION = "django_loci.channels.asgi.channel_routing"
 CHANNEL_LAYERS = {"default": {"BACKEND": "channels.layers.InMemoryChannelLayer"}}

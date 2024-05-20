@@ -1,19 +1,19 @@
 django-loci
 ===========
 
-.. image:: https://github.com/openwisp/django-loci/workflows/Django%20Loci%20Build/badge.svg?branch=master
-   :target: https://github.com/openwisp/django-loci/actions?query=workflow%3A"Django+Loci+Build"
+.. image:: https://github.com/edge-servers/django-loci/workflows/Django%20Loci%20Build/badge.svg?branch=master
+   :target: https://github.com/edge-servers/django-loci/actions?query=workflow%3A"Django+Loci+Build"
    :alt: CI build status
 
-.. image:: https://coveralls.io/repos/openwisp/django-loci/badge.svg
-   :target: https://coveralls.io/r/openwisp/django-loci
+.. image:: https://coveralls.io/repos/immunity/django-loci/badge.svg
+   :target: https://coveralls.io/r/immunity/django-loci
 
-.. image:: https://img.shields.io/librariesio/release/github/openwisp/django-loci
-  :target: https://libraries.io/github/openwisp/django-loci#repository_dependencies
+.. image:: https://img.shields.io/librariesio/release/github/immunity/django-loci
+  :target: https://libraries.io/github/immunity/django-loci#repository_dependencies
   :alt: Dependency monitoring
 
 .. image:: https://img.shields.io/gitter/room/nwjs/nw.js.svg?style=flat-square
-   :target: https://gitter.im/openwisp/general
+   :target: https://gitter.im/immunity/general
 
 .. image:: https://badge.fury.io/py/django-loci.svg
    :target: http://badge.fury.io/py/django-loci
@@ -30,16 +30,16 @@ django-loci
 
 Reusable django-app for storing GIS and indoor coordinates of objects.
 
-.. image:: https://raw.githubusercontent.com/openwisp/django-loci/master/docs/indoor.png
-   :target: https://raw.githubusercontent.com/openwisp/django-loci/master/docs/indoor.png
+.. image:: https://raw.githubusercontent.com/immunity/django-loci/master/docs/indoor.png
+   :target: https://raw.githubusercontent.com/immunity/django-loci/master/docs/indoor.png
    :alt: Indoor coordinates
 
-.. image:: https://raw.githubusercontent.com/openwisp/django-loci/master/docs/map.png
-   :target: https://raw.githubusercontent.com/openwisp/django-loci/master/docs/map.png
+.. image:: https://raw.githubusercontent.com/immunity/django-loci/master/docs/map.png
+   :target: https://raw.githubusercontent.com/immunity/django-loci/master/docs/map.png
    :alt: Map coordinates
 
-.. image:: https://raw.githubusercontent.com/openwisp/django-loci/master/docs/mobile.png
-   :target: https://raw.githubusercontent.com/openwisp/django-loci/master/docs/mobile.png
+.. image:: https://raw.githubusercontent.com/immunity/django-loci/master/docs/mobile.png
+   :target: https://raw.githubusercontent.com/immunity/django-loci/master/docs/mobile.png
    :alt: Mobile coordinates
 
 ------------
@@ -91,13 +91,13 @@ Install tarball:
 
 .. code-block:: shell
 
-    pip install https://github.com/openwisp/django-loci/tarball/master
+    pip install https://github.com/edge-servers/django-loci/tarball/master
 
 Alternatively you can install via pip using git:
 
 .. code-block:: shell
 
-    pip install -e git+git://github.com/openwisp/django-loci#egg=django_loci
+    pip install -e git+git://github.com/immunity/django-loci#egg=django_loci
 
 If you want to contribute, install your cloned fork:
 
@@ -185,7 +185,7 @@ The filestorage can be changed to a different one as long as it has an
 
 To understand the details of this statement, take a look at the code of
 `django_loci.storage.OverwriteStorage
-<https://github.com/openwisp/django-loci/blob/master/django_loci/storage.py>`_.
+<https://github.com/edge-servers/django-loci/blob/master/django_loci/storage.py>`_.
 
 ``DJANGO_LOCI_GEOCODER``
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -354,17 +354,17 @@ Now add ``EXTENDED_APPS`` after ``INSTALLED_APPS``:
 
     EXTENDED_APPS = ('django_loci',)
 
-Add ``openwisp_utils.staticfiles.DependencyFinder`` to ``STATICFILES_FINDERS``:
+Add ``immunity_utils.staticfiles.DependencyFinder`` to ``STATICFILES_FINDERS``:
 
 .. code-block:: python
 
     STATICFILES_FINDERS = [
         'django.contrib.staticfiles.finders.FileSystemFinder',
         'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-        'openwisp_utils.staticfiles.DependencyFinder',
+        'immunity_utils.staticfiles.DependencyFinder',
     ]
 
-Add ``openwisp_utils.loaders.DependencyLoader`` to ``TEMPLATES``:
+Add ``immunity_utils.loaders.DependencyLoader`` to ``TEMPLATES``:
 
 .. code-block:: python
 
@@ -377,7 +377,7 @@ Add ``openwisp_utils.loaders.DependencyLoader`` to ``TEMPLATES``:
                     'django.template.loaders.filesystem.Loader',
                     'django.template.loaders.app_directories.Loader',
                     # add the following line
-                    'openwisp_utils.loaders.DependencyLoader'
+                    'immunity_utils.loaders.DependencyLoader'
                 ],
                 'context_processors': [
                     'django.template.context_processors.debug',
@@ -527,7 +527,7 @@ Run tests with:
 Contributing
 ------------
 
-1. Announce your intentions in the `OpenWISP Mailing List <https://groups.google.com/d/forum/openwisp>`_
+1. Announce your intentions in the `Immunity Mailing List <https://groups.google.com/d/forum/immunity>`_
 2. Fork this repo and install it
 3. Follow `PEP8, Style Guide for Python Code`_
 4. Write code
@@ -542,9 +542,9 @@ Contributing
 Changelog
 ---------
 
-See `CHANGES <https://github.com/openwisp/django-loci/blob/master/CHANGES.rst>`_.
+See `CHANGES <https://github.com/edge-servers/django-loci/blob/master/CHANGES.rst>`_.
 
 License
 -------
 
-See `LICENSE <https://github.com/openwisp/django-loci/blob/master/LICENSE>`_.
+See `LICENSE <https://github.com/edge-servers/django-loci/blob/master/LICENSE>`_.

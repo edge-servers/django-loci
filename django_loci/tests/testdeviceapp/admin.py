@@ -1,7 +1,7 @@
 from django.contrib import admin
 
 from django_loci.admin import ObjectLocationInline
-from openwisp_utils.admin import TimeReadonlyAdminMixin
+from immunity_utils.admin import TimeReadonlyAdminMixin
 
 from .models import Device
 

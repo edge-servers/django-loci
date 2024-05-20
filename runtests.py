@@ -5,7 +5,7 @@ import os
 import sys
 
 sys.path.insert(0, 'tests')
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'openwisp2.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'immunity2.settings')
 
 if __name__ == '__main__':
     import pytest
